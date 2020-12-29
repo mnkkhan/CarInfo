@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cardview_default_elevation">
+
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Number"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/id2"
+            android:layout_alignTop="@+id/id"
+            android:hint="Owner Name"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="&#8942;"
+            android:id="@+id/optionMenu"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomepage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t"
+        android:text=" User Homepage "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/t"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Welcome"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/t"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="125dp"
+        android:hint="user name"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView29"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text=" Logout " />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/textView4"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:text="For Change Password "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button7"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Click here..."
+        android:textSize="18dp"
+        android:textColor="@color/blue"
+        android:onClick="changePassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information of Vehicle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:id="@+id/text2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Vehicle Reg No."
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/id"
+            android:layout_alignTop="@+id/id"
+            android:text="Owner Name"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="70dp"
+        android:id="@+id/itemList"
+        android:fadeScrollbars="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

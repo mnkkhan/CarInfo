@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RTO</string>
+    <string name="app_name1">Login Here</string>
+    <string name="app_name2">User Register Here</string>
+    <string name="app_name3">Admin Homepage</string>
+    <string name="app_name4">Search here...</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".CreateAdmin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dear,"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/auid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Admin User Id"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now, you can create a new Admin Record "
+        android:textSize="22dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/auid"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Name : "
+        android:textSize="22dp"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auid"
+        android:layout_marginTop="48dp"
+        android:layout_toRightOf="@id/textView16"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView14"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="User Id :  "
+        android:textSize="22dp"/>
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@id/textView16"
+        android:ems="10"
+        android:hint="User id"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView15"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Password :  "
+        android:textSize="22dp"/>
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView15"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@id/textView16"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Submit" />
+</RelativeLayout>

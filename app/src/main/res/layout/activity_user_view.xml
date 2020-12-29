@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="User Details "
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="62dp"
+        android:text="Name :"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/editText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView24"
+        android:layout_alignTop="@id/textView22"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="127dp"
+        android:text="User id :"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/editText15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView24"
+        android:layout_alignTop="@id/textView23"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:hint="user id"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="192dp"
+        android:text="Phone No. :"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/editText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView24"
+        android:layout_alignTop="@id/textView24"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:hint="phone"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="257dp"
+        android:text="Gender : "
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView24"
+        android:layout_alignBottom="@id/textView30"
+        android:layout_marginLeft="15dp"
+        android:hint="Male/Female"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="322dp"
+        android:text="Back" />
+
+
+</RelativeLayout>

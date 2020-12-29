@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserReg">
+
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="User Registration "
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Name :"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_below="@id/t2"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView22"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="User id :"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_below="@id/textView22"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="user id"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Phone No. :"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_below="@id/textView23"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="phone"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView24"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Password : "
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_below="@id/textView24"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="pwd"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/textView25"
+        android:layout_marginTop="30dp"
+        android:text="Confirm Password : "
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_below="@id/textView25"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="confirm pwd"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView26"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Gender : "
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_alignBottom="@id/textView30"
+        android:entries="@array/gender" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView30"
+        android:layout_marginTop="45dp"
+        android:text=" Submit " />
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button6"
+        android:layout_marginTop="15dp"
+        android:text="If You have already Registered then \n(Only For User Login)"
+        android:textSize="22dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/t"
+        android:layout_marginTop="5dp"
+        android:text="Click here..."
+        android:textColor="@color/blue"
+        android:onClick="login"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
